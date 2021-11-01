@@ -1,0 +1,319 @@
+progarme 1
+/**
+ *
+ * @author mahmoud
+ */
+public class address {
+    String streetno;
+     String CITY;
+     String country;
+
+    public address(String streetno, String CITY, String country) {
+        this.streetno = streetno;
+        this.CITY = CITY;
+        this.country = country;
+    }
+
+    public void setStreetno(String streetno) {
+        this.streetno = streetno;
+    }
+
+    public void setCITY(String CITY) {
+        this.CITY = CITY;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getStreetno() {
+        return streetno;
+    }
+
+    public String getCITY() {
+        return CITY;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+     
+    
+}
+/**
+ *
+ * @author mahmoud
+ */
+public class STudent1 {
+    public String name;
+    private int  ID;
+    public float GPI;
+    STudent1 STudent1;
+    address address;
+
+    public STudent1(String name, int ID, float GPI) {
+        this.name = name;
+        this.ID = ID;
+        this.GPI = GPI;
+    }
+    
+    
+    
+}
+public class subject
+{
+    int subjectID;
+    String subjectname;
+    int subjecthours;
+
+    public subject(int subjectID, String subjectname, int subjecthours) {
+        this.subjectID = subjectID;
+        this.subjectname = subjectname;
+        this.subjecthours = subjecthours;
+    }
+
+}
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+progame 2
+* Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author mahmoud
+ */
+public class person {
+     String name;
+     String address;
+     int phone_number;
+     String email_address;
+
+    public person() {
+    }
+
+    public person(String name, String address, int phone_number, String email_address) {
+        this.name = name;
+        this.address = address;
+        this.phone_number = phone_number;
+        this.email_address = email_address;
+    }
+
+    public String toString(){
+        return name +"person";
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setPhone_number(int phone_number) {
+        this.phone_number = phone_number;
+    }
+
+    public void setEmail_address(String email_address) {
+        this.email_address = email_address;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public int getPhone_number() {
+        return phone_number;
+    }
+
+    public String getEmail_address() {
+        return email_address;
+    }
+     
+
+public class student extends person {
+    final String sta1 ="freshman";
+    final String sta2 ="sophomor";
+    final String sta3 ="Junior";
+   final String sta4 ="Senior";
+
+    public student() {
+    }
+
+    public student(String name, String address, int phone_number, String email_address) {
+        super(name, address, phone_number, email_address);
+        
+    }
+    public String toString(){
+        return name  +"student";
+        
+    }
+   
+    
+    
+    
+}
+
+    
+}
+public class Employee extends person{
+    String office;
+    double salary;
+    int date_hired;
+
+    public Employee() {
+    }
+
+    
+
+    public Employee(String office, double salary, int date_hired, String name, String address, int phone_number, String email_address) {
+        super(name, address, phone_number, email_address);
+        this.office = office;
+        this.salary = salary;
+        this.date_hired = date_hired;
+    }
+    public String toString(){
+        return name +"employee" ;
+    }
+
+    public void setOffice(String office) {
+        this.office = office;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setDate_hired(int date_hired) {
+        this.date_hired = date_hired;
+    }
+
+    public String getOffice() {
+        return office;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public int getDate_hired() {
+        return date_hired;
+    }
+    
+    
+}
+
+public class faculty extends Employee{
+    double office_houer;
+    String rank;
+
+    public faculty() {
+    }
+
+   
+
+    public faculty(double office_houer, String rank, String office, double salary, int date_hired, String name, String address, int phone_number, String email_address) {
+        super(office, salary, date_hired, name, address, phone_number, email_address);
+        this.office_houer = office_houer;
+        this.rank = rank;
+    }
+
+    public void setOffice_houer(double office_houer) {
+        this.office_houer = office_houer;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
+
+    public double getOffice_houer() {
+        return office_houer;
+    }
+
+    public String getRank() {
+        return rank;
+    }
+    
+    
+}
+public class faculty extends Employee{
+    double office_houer;
+    String rank;
+
+    public faculty() {
+    }
+
+   
+
+    public faculty(double office_houer, String rank, String office, double salary, int date_hired, String name, String address, int phone_number, String email_address) {
+        super(office, salary, date_hired, name, address, phone_number, email_address);
+        this.office_houer = office_houer;
+        this.rank = rank;
+    }
+
+    public void setOffice_houer(double office_houer) {
+        this.office_houer = office_houer;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
+
+    public double getOffice_houer() {
+        return office_houer;
+    }
+
+    public String getRank() {
+        return rank;
+    }
+    public String tostring(){
+        return name+"staff";
+    }
+    
+}
+public class mydate {
+   private int year;
+   private  int month;
+    private int day;
+
+    public mydate() {
+    }
+
+    public mydate(int year, int month, int day) {
+        this.year = year;
+        this.month = month;
+        this.day = day;
+    }
+    
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public void setDay(int day) {
+        this.day = day;
+    }
+    
+    
+}
+
